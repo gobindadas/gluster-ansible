@@ -147,6 +147,7 @@ hc_nodes:
       - volname: engine
         brick: /gluster_bricks/engine/engine
         arbiter: 0
+        replica_count: 3
         servers:
           - host1
           - host2
@@ -154,6 +155,7 @@ hc_nodes:
       - volname: data
         brick: /gluster_bricks/data/data
         arbiter: 0
+        replica_count: 3
         servers:
           - host4
           - host5
@@ -161,6 +163,7 @@ hc_nodes:
       - volname: vmstore
         brick: /gluster_bricks/vmstore/vmstore
         arbiter: 1
+        replica_count: 3
         servers:
           - host4
           - host5
